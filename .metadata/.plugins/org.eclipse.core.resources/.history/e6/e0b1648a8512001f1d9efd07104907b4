@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+/**
+ * Regex(Regular Expression) Character Classes
+ * 	=> any single character
+ */
+
+public class Regex_test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		String inp;
+		/*
+		System.out.println("Enter a character for test:");
+		inp=sc.next();
+		String pattern=".";//single character
+		 */
+		System.out.println("Enter a character (a or b or c):");
+		inp=sc.next();
+		String pattern="[abc]";//single character
+		if(Pattern.matches(pattern, inp)) System.out.println("Input is right");
+		else System.out.println("Input is wrong");
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package user_defined_exception;
+
+import java.util.InputMismatchException;
+
+public class Age_Check extends InputMismatchException {
+	public Age_Check() {}
+	
+	public Age_Check(String s) {
+		System.out.println(s);
+	}
+
+}

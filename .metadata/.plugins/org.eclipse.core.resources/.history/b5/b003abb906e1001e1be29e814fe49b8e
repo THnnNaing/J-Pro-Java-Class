@@ -1,0 +1,12 @@
+package employee;
+
+public class EmployeeInformationSystem {
+
+	public static void main(String[] args) {
+		Department d = new Department(3);
+		Employee e = new Employee();
+//		e.inputEmployee();
+		d.addEmployee(e);
+		d.showAllEmployee();
+	}
+}

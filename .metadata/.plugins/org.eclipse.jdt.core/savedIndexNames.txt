@@ -1,0 +1,13 @@
+INDEX VERSION 1.134+C:\J-Pro Vocational Japanese Language School\Java\.metadata\.plugins\org.eclipse.jdt.core
+3661632858.index
+615231966.index
+1650135229.index
+3971829705.index
+375743486.index
+1194897725.index
+1310984492.index
+4083530874.index
+1865797976.index
+271159951.index
+987290143.index
+1880859750.index

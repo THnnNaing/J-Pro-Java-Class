@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class Exercise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		String inp;
+		
+		String pattern="Std-[0-9]{5}";//AP-4 digits or more
+		System.out.println("Enter Student ID:");
+		inp=sc.next();
+		if(Pattern.matches(pattern,inp))System.out.println("Right input");
+		else System.out.println("Wronginput");
+	}
+
+}

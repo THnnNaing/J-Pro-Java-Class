@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		double num1, num2, ans;
+		char op;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter first number:");
+//		num1=sc.nextDouble(); //inputmismatchexception
+		String n1=sc.next();
+		while(!Pattern.matches("[0-9]{1,6}", n1)) {
+			System.out.print("Input format wrrong, it must be double number, Type again:");
+			n1=sc.next();
+		}
+	}
+
+}

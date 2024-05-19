@@ -1,0 +1,39 @@
+package student;
+import java.util.Scanner;
+
+public class Student {
+	private String rno,name,dob,major;
+	
+	//constructor
+	public Student () {
+		rno="";
+		name="";
+		dob="";
+		major="";
+	}
+	//argument constructor
+	public Student (String no, String n, String m, String d) {
+		no=rno;
+		n=name;
+		m=major;
+		d=dob;
+	}
+	public void InputStudent() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Student Data (Rno, Name, DoB and Major in order)");
+		rno=sc.next();
+		name=sc.next();
+		dob=sc.next();
+		major=sc.next();
+	}
+	public void ShowStudent () {
+		System.out.println(rno + ":" + name + ":" + dob + ":" + major);
+	}
+	
+	public static void main(String[] args) {
+		Student s = new Student();
+		s.InputStudent();
+		s.ShowStudent();
+	}
+	
+}

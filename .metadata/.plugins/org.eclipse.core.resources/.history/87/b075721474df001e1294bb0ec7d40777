@@ -1,0 +1,36 @@
+/*
+ * keywords & variable
+ - static variable
+ - final variable
+ -insane variable
+ */
+public class Testing {
+	
+	private static int a=0; //share by all objects
+	private int b;			//instance variable -> own by each object
+	private final int c=10; //can't update
+	
+	public Testing() {
+		a++;
+		b=10;
+	}
+	
+	
+	
+	public void showData() {
+		System.out.println("a: "+a);
+		System.out.println("b: "+b);
+		System.out.println("c: "+c);
+	}
+	
+	public static void main(String[] args) {
+		Testing t1= new Testing();
+		System.out.println("For first object");
+		t1.showData();
+		
+		Testing t2= new Testing();
+		System.out.println("For second object");
+		t2.showData();
+	}
+
+}

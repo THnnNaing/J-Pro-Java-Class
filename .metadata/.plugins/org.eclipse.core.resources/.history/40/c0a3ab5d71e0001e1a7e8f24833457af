@@ -1,0 +1,28 @@
+package student;
+import java.util.Scanner;
+
+import pos.Item;
+
+public class Student {
+	
+	private int studentCount = 0;
+	private info students[]=new info[20];
+	
+	
+	public void showAllStudent() {
+		new info().showHeading();
+		for(int i=0;i<studentCount;i++) {
+			students[i].ShowStudent(i+1);
+		}
+	}
+	
+	public static void main(String[] args) {
+		info s = new info();
+		s.InputStudent();
+		
+		s.ShowStudent();
+		s.showHeading();
+	}
+	
+	
+}

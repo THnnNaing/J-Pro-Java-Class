@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class AcceptUntilRight {
+
+	static boolean checkName(String name) {
+		String pattern = "(Mr.|Ms.|Mrs.)[A-Z]{1}[a-z]*";
+		if(Pattern.matches(pattern, name)) return true;
+		return false;
+	}
+				
+	public static void main(String[] args) {
+		String name;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter your name started with Mr. or Mrs. or Ms. eg.Mr.John:");
+		name=sc.next();
+		while(!checkName(name)) {
+			System.out.println("Your input name is wrong, it must be start with");
+			System.out.println("Mr. or Mrs. or Ms. and not include any space");
+			System.out.println("And followed by one captial letters and followed by any characterr");
+			System.out.println("Eg.Mr.Joihn,Type again:");
+			name=sc.next();
+		}
+		
+	}
+
+}
